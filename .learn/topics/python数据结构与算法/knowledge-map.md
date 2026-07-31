@@ -4,7 +4,7 @@
 
 ## 数据结构
 
-- ⚪ **数组与列表** (unexplored)
+- 🔵 **数组与列表** (in progress)
 - ⚪ **栈** (unexplored)
 - ⚪ **队列** (unexplored)
 - ⚪ **链表** (unexplored)

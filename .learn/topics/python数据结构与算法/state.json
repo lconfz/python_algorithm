@@ -11,11 +11,11 @@
         {
           "name": "数组与列表",
           "slug": "arrays-and-lists",
-          "status": "unexplored",
+          "status": "in_progress",
           "confidence": 0,
           "practice_count": 0,
-          "explain_count": 0,
-          "last_explained": null,
+          "explain_count": 1,
+          "last_explained": "2026-07-31",
           "last_practiced": null,
           "details": []
         },
