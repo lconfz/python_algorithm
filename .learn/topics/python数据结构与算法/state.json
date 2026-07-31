@@ -1,0 +1,296 @@
+{
+  "version": 1,
+  "topic": "python数据结构与算法",
+  "slug": "python-data-structures-and-algorithms",
+  "created": "2026-07-31",
+  "domains": [
+    {
+      "name": "数据结构",
+      "slug": "data-structures",
+      "concepts": [
+        {
+          "name": "数组与列表",
+          "slug": "arrays-and-lists",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": []
+        },
+        {
+          "name": "栈",
+          "slug": "stack",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": []
+        },
+        {
+          "name": "队列",
+          "slug": "queue",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": []
+        },
+        {
+          "name": "链表",
+          "slug": "linked-list",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": []
+        },
+        {
+          "name": "哈希表",
+          "slug": "hash-table",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["dict 与 set", "哈希冲突处理"]
+        },
+        {
+          "name": "树与二叉树",
+          "slug": "trees",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["遍历方式", "平衡概念"]
+        },
+        {
+          "name": "二叉搜索树",
+          "slug": "binary-search-tree",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": []
+        },
+        {
+          "name": "堆与优先队列",
+          "slug": "heap",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["heapq 模块"]
+        },
+        {
+          "name": "图结构",
+          "slug": "graphs",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["邻接表与邻接矩阵"]
+        }
+      ]
+    },
+    {
+      "name": "复杂度与算法基础",
+      "slug": "fundamentals",
+      "concepts": [
+        {
+          "name": "时间复杂度与空间复杂度",
+          "slug": "big-o",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["大O记号", "常见复杂度对比"]
+        },
+        {
+          "name": "递归",
+          "slug": "recursion",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["递归三要素", "尾递归与递归深度限制"]
+        },
+        {
+          "name": "排序算法",
+          "slug": "sorting",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["冒泡/选择/插入", "归并排序", "快速排序"]
+        },
+        {
+          "name": "二分查找",
+          "slug": "binary-search",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["边界条件处理", "bisect 模块"]
+        },
+        {
+          "name": "分治算法",
+          "slug": "divide-and-conquer",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": []
+        }
+      ]
+    },
+    {
+      "name": "算法范式",
+      "slug": "algorithm-paradigms",
+      "concepts": [
+        {
+          "name": "贪心算法",
+          "slug": "greedy",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["贪心选择性质", "区间调度问题"]
+        },
+        {
+          "name": "动态规划",
+          "slug": "dynamic-programming",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["状态定义与转移方程", "记忆化搜索", "背包问题", "最长公共子序列"]
+        },
+        {
+          "name": "回溯算法",
+          "slug": "backtracking",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["排列组合问题", "剪枝优化"]
+        },
+        {
+          "name": "滑动窗口",
+          "slug": "sliding-window",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": []
+        },
+        {
+          "name": "双指针",
+          "slug": "two-pointers",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["快慢指针", "相向指针"]
+        },
+        {
+          "name": "前缀和",
+          "slug": "prefix-sum",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": []
+        }
+      ]
+    },
+    {
+      "name": "图算法",
+      "slug": "graph-algorithms",
+      "concepts": [
+        {
+          "name": "图的遍历 BFS 与 DFS",
+          "slug": "bfs-dfs",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["BFS 求最短路径", "DFS 与回溯结合"]
+        },
+        {
+          "name": "最短路径",
+          "slug": "shortest-path",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["Dijkstra 算法", "Floyd 算法", "Bellman-Ford"]
+        },
+        {
+          "name": "最小生成树",
+          "slug": "minimum-spanning-tree",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["Kruskal 算法", "Prim 算法"]
+        },
+        {
+          "name": "拓扑排序",
+          "slug": "topological-sort",
+          "status": "unexplored",
+          "confidence": 0,
+          "practice_count": 0,
+          "explain_count": 0,
+          "last_explained": null,
+          "last_practiced": null,
+          "details": ["Kahn 算法", "DFS 实现", "环检测"]
+        }
+      ]
+    }
+  ]
+}
