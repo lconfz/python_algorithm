@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "topic": "python数据结构与算法",
+  "topic_slug": "python-data-structures-and-algorithms",
+  "concept_slug": "arrays-and-lists",
+  "concept_name": "数组与列表",
+  "created": "2026-08-01 17:24:25",
+  "questions": [
+    {
+      "id": "q1",
+      "type": "multiple_choice",
+      "gradeable": "exact",
+      "prompt": "Python 的 list.append(x) 的时间复杂度是？",
+      "options": [
+        "严格 O(1)，每次都是常数时间",
+        "均摊 O(1)，偶尔扩容 O(n) 但平均常数",
+        "O(n)，每次都要移动元素",
+        "O(log n)"
+      ],
+      "answer": "均摊 O(1)，偶尔扩容 O(n) 但平均常数",
+      "explanation": "list 是动态数组，容量不足时触发约 12.5% 过度分配扩容（单次扩容 O(n)），但扩容频率随 n 几何级数递减，摊平后每次 append 均摊 O(1)。"
+    },
+    {
+      "id": "q2",
+      "type": "true_false",
+      "gradeable": "exact",
+      "prompt": "执行 b = a 后（a 是列表），再执行 b.append(4)，a 会跟着变成包含 4 的列表。",
+      "answer": true,
+      "explanation": "b = a 是别名赋值，b 与 a 指向同一个列表对象，改 b 就是改 a。要复制得用 a[:]、list(a) 或 copy.copy(a)。"
+    },
+    {
+      "id": "q3",
+      "type": "multiple_choice",
+      "gradeable": "exact",
+      "prompt": "执行 grid = [[0]] * 3 之后，grid 实际是什么？",
+      "options": [
+        "3 个互相独立的 [0] 列表",
+        "包含同一个内层列表引用的 3 个位置",
+        "一个包含 3 个整数的扁平列表",
+        "语法错误，无法执行"
+      ],
+      "answer": "包含同一个内层列表引用的 3 个位置",
+      "explanation": "* 复制的是引用，3 个位置指向同一个内层列表，改 grid[0][0] 三处一起变。正确写法是 [[0] for _ in range(3)]。"
+    },
+    {
+      "id": "q4",
+      "type": "multi_select",
+      "gradeable": "exact",
+      "prompt": "在 Python list 上，以下哪些操作的时间复杂度是 O(n)？（多选）",
+      "options": [
+        "arr[i] 索引访问",
+        "pop(0) 删除头部",
+        "x in arr 成员查找",
+        "append(x) 末尾追加"
+      ],
+      "answer": ["pop(0) 删除头部", "x in arr 成员查找"],
+      "explanation": "pop(0) 需把剩余元素整体前移 O(n)；in 是顺序扫描 O(n)。索引访问 O(1)，append 均摊 O(1)。"
+    },
+    {
+      "id": "q5",
+      "type": "fill_in_blank",
+      "gradeable": "accepted",
+      "prompt": "CPython 的 list 扩容采用过度分配（over-allocation）策略，容量增长率约为 ____%（填数字）。",
+      "accepted_answers": ["12.5", "12.5%", "12.5 %", "约12.5", "约 12.5", "12.5％", "1.125 倍"],
+      "answer": "12.5%",
+      "explanation": "list_resize 每次扩容按约 old + old/8 申请（约 12.5% 增长），这就是均摊 O(1) 的来源。"
+    },
+    {
+      "id": "q6",
+      "type": "error_correction",
+      "gradeable": "ai_only",
+      "prompt": "找出以下代码的 bug：\n\nnums = [1, 2, 3, 4]\nnums[-0:] = []\nprint(nums)  # 期望输出 [1, 2, 3, 4]",
+      "answer": "参考解释：-0 与 0 是同一个索引，nums[-0:] 就是 nums[0:]（整个数组），把整个数组替换为空列表，print 会输出 []。这是练习中 move_zeros 末尾补零时的边界陷阱：当需要补的个数为 0 时，nums[-tmp:] 会退化成 nums[0:] 清空数组。应写 nums[len(nums) - tmp:] 或在 tmp == 0 时跳过。",
+      "explanation": "同参考解释。"
+    },
+    {
+      "id": "q7",
+      "type": "true_false",
+      "gradeable": "exact",
+      "prompt": "Python 的元组交换 nums[i], nums[j] = nums[j], nums[i] 是并行赋值，左右两侧同时完成。",
+      "answer": false,
+      "explanation": "不是并行：右侧先整体求值打包成临时元组（值被冻结），左侧再从左到右逐个赋值。正因为右侧先算完，交换才安全。"
+    },
+    {
+      "id": "q8",
+      "type": "multiple_choice",
+      "gradeable": "exact",
+      "prompt": "有序数组原地去重（remove_duplicates）中，写指针 i 初始化为 1 而不是 0，原因是？",
+      "options": [
+        "数组索引从 1 开始计数",
+        "nums[0] 天然是去重结果的第一个元素，无需写入",
+        "为了处理空数组不会崩溃",
+        "没有特殊原因，写 0 也完全一样"
+      ],
+      "answer": "nums[0] 天然是去重结果的第一个元素，无需写入",
+      "explanation": "有序数组的第一个元素必然保留，写指针从 1 起直接开始比较写入；若从 0 起会重复写自己。判断法则：首元素天然正确则从 1 起，可能被替换则从 0 起。"
+    }
+  ]
+}

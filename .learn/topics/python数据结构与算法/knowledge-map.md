@@ -5,8 +5,8 @@
 ## 数据结构
 
 - 🔵 **数组与列表** (in progress)
-- ⚪ **栈** (unexplored)
-- ⚪ **队列** (unexplored)
+- 🔵 **栈** (in progress)
+- 🔵 **队列** (in progress)
 - ⚪ **链表** (unexplored)
 - ⚪ **哈希表** (unexplored)
   - dict 与 set
