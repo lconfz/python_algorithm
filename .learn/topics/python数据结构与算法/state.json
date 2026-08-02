@@ -116,12 +116,12 @@
         {
           "name": "时间复杂度与空间复杂度",
           "slug": "big-o",
-          "status": "unexplored",
-          "confidence": 0,
-          "practice_count": 0,
+          "status": "needs_practice",
+          "confidence": 0.05,
+          "practice_count": 1,
           "explain_count": 0,
           "last_explained": null,
-          "last_practiced": null,
+          "last_practiced": "2026-08-02",
           "details": ["大O记号", "常见复杂度对比"]
         },
         {
