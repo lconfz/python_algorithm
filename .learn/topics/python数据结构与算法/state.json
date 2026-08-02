@@ -23,22 +23,22 @@
           "name": "栈",
           "slug": "stack",
           "status": "in_progress",
-          "confidence": 0.1,
-          "practice_count": 0,
+          "confidence": 0.25,
+          "practice_count": 1,
           "explain_count": 1,
           "last_explained": "2026-08-01",
-          "last_practiced": null,
+          "last_practiced": "2026-08-02",
           "details": []
         },
         {
           "name": "队列",
           "slug": "queue",
           "status": "in_progress",
-          "confidence": 0.1,
-          "practice_count": 0,
+          "confidence": 0.25,
+          "practice_count": 1,
           "explain_count": 1,
           "last_explained": "2026-08-01",
-          "last_practiced": null,
+          "last_practiced": "2026-08-02",
           "details": []
         },
         {
